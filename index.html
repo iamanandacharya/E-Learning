@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html class="transition-navbar-scroll top-navbar-xlarge bottom-footer" lang="en" ng-app="EAlerceApp">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Learning</title>
+
+        <link href="css/vendor/all.css" rel="stylesheet">
+
+        <!--        <link href="css/vendor/bootstrap.css" rel="stylesheet"> 
+                <link href="css/vendor/font-awesome.css" rel="stylesheet"> 
+                <link href="css/vendor/picto.css" rel="stylesheet"> 
+                <link href="css/vendor/material-design-iconic-font.css" rel="stylesheet"> 
+                <link href="css/vendor/datepicker3.css" rel="stylesheet"> 
+                <link href="css/vendor/jquery.minicolors.css" rel="stylesheet"> 
+                <link href="css/vendor/railscasts.css" rel="stylesheet"> 
+                <link href="css/vendor/owl.carousel.css" rel="stylesheet"> 
+                <link href="css/vendor/slick.css" rel="stylesheet"> 
+                <link href="css/vendor/daterangepicker-bs3.css" rel="stylesheet"> 
+                <link href="css/vendor/jquery.bootstrap-touchspin.css" rel="stylesheet"> 
+                <link href="css/vendor/select2.css" rel="stylesheet"> 
+                <link href="css/vendor/jquery.countdown.css" rel="stylesheet"> -->
+
+        <link href="css/app/app.css" rel="stylesheet">
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.4/angular-material.min.css" rel="stylesheet">
+
+        <!-- <link href="css/app/main.css" rel="stylesheet"> -->
+
+        <!--         <link href="css/app/essentials.css" rel="stylesheet" /> 
+                 <link href="css/app/material.css" rel="stylesheet" /> 
+                 <link href="css/app/layout.css" rel="stylesheet" /> 
+                 <link href="css/app/sidebar.css" rel="stylesheet" /> 
+                 <link href="css/app/sidebar-skins.css" rel="stylesheet" /> 
+                 <link href="css/app/navbar.css" rel="stylesheet" /> 
+                 <link href="css/app/messages.css" rel="stylesheet" /> 
+                 <link href="css/app/media.css" rel="stylesheet" /> 
+                 <link href="css/app/charts.css" rel="stylesheet" /> 
+                 <link href="css/app/maps.css" rel="stylesheet" /> 
+                 <link href="css/app/colors-alerts.css" rel="stylesheet" /> 
+                 <link href="css/app/colors-background.css" rel="stylesheet" /> 
+                 <link href="css/app/colors-buttons.css" rel="stylesheet" /> 
+                 <link href="css/app/colors-text.css" rel="stylesheet" /> -->
+
+        <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+        <script>
+            var colors = {
+                "danger-color": "#e74c3c",
+                "success-color": "#81b53e",
+                "warning-color": "#f0ad4e",
+                "inverse-color": "#2c3e50",
+                "info-color": "#2d7cb5",
+                "default-color": "#6e7882",
+                "default-light-color": "#cfd9db",
+                "purple-color": "#9D8AC7",
+                "mustard-color": "#d4d171",
+                "lightred-color": "#e15258",
+                "body-bg": "#f6f6f6"
+            };
+            var config = {
+                theme: "html",
+                skins: {
+                    "default": {
+                        "primary-color": "#42a5f5"
+                    }
+                }
+            };
+        </script> 
+
+        <script src="js/vendor/core/all.js"></script> 
+        <!--        <script src="js/vendor/core/jquery.js"></script> 
+                <script src="js/vendor/core/bootstrap.js"></script> 
+                <script src="js/vendor/core/breakpoints.js"></script> 
+                <script src="js/vendor/core/jquery.nicescroll.js"></script> 
+                <script src="js/vendor/core/isotope.pkgd.js"></script> 
+                <script src="js/vendor/core/packery-mode.pkgd.js"></script> 
+                <script src="js/vendor/core/jquery.grid-a-licious.js"></script> 
+                <script src="js/vendor/core/jquery.cookie.js"></script> 
+                <script src="js/vendor/core/jquery-ui.custom.js"></script> 
+                <script src="js/vendor/core/jquery.hotkeys.js"></script> 
+                <script src="js/vendor/core/handlebars.js"></script> 
+                <script src="js/vendor/core/jquery.hotkeys.js"></script> 
+                <script src="js/vendor/core/load_image.js"></script> 
+                <script src="js/vendor/core/jquery.debouncedresize.js"></script> 
+                <script src="js/vendor/core/modernizr.js"></script> 
+                <script src="js/vendor/core/velocity.js"></script> -->
+
+        <script src="js/vendor/tables/all.js"></script> 
+        <script src="js/vendor/forms/all.js"></script> 
+        <script src="js/vendor/media/slick.js"></script> 
+        <script src="js/vendor/charts/flot/all.js"></script> 
+        <script src="js/vendor/nestable/jquery.nestable.js"></script> 
+        <script src="js/vendor/countdown/all.js"></script> 
+
+
+
+        <script src="js/lib/angular.min.js"></script>
+        <script src="js/lib/angular-cookies.min.js"></script>
+        <script src="js/lib/angular-route.js"></script>
+        <script src="js/lib/angular-resource.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+        <!-- Angular Material Library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
+
+              <script src="js/app.js"></script>
+        <script src="controllers/login.controller.js"></script>
+        <script src="controllers/logout.controller.js"></script>
+        <script src="controllers/home.controller.js"></script>
+        <script src="controllers/sDashboard.controller.js"></script>
+        <script src="controllers/tDashboard.controller.js"></script>
+        <script src="controllers/register.controller.js"></script>
+
+
+
+    </head>
+
+    <body ng-class="settings.bodyClass">        
+        <div ng-view></div>       
+    </body>
+
+</html>
